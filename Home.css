@@ -1,0 +1,84 @@
+/*Fonte Google*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*Estiliza aplicada a todo o site*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body{ /*Depois talvez mudar para .blog-slider*/
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /*centro vertical da div*/
+    justify-content: center; /*centro horizontal da div*/
+    background-color: #efefef;
+}
+
+.conteudo-do-blogslider{
+    margin: 0 40px;
+}
+
+.cartao{
+    width: 320px;;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.conteudo-da-imagem, .conteudo-do-cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.conteudo-da-imagem{
+    row-gap: 5px;
+}
+
+.imagem-do-cartao{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.imagem-do-cartao .imagem-cartao{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%; /*Define a imagem como redonda*/
+    border: 4px solid #4070F4;
+}
+
+.titulo-do-cartao{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.lead-da-noticia{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.botao-de-ver-mais-blog{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px;
+    background-color: #4070F4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao-de-ver-mais-blog:hover{
+    background: #265df2;
+}
