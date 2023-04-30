@@ -29,6 +29,11 @@ body{ /*Depois talvez mudar para .blog-slider*/
     margin: 0 40px;
 }
 
+.seccao-dos-cartoes{
+    display: flex; 
+    gap: 40px;
+}
+
 .cartao{
     width: 320px;;
     border-radius: 25px;
@@ -78,18 +83,15 @@ body{ /*Depois talvez mudar para .blog-slider*/
 .imagem-do-cartao{
     position: relative;
     height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: #fff;
+    width: 250px;
+    border-radius: 25px;
     padding: 3px;
 }
 
 .imagem-do-cartao .imagem-cartao{
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 50%; /*Define a imagem como redonda*/
-    border: 4px solid #4070F4;
+    border-radius: 25px;
 }
 
 .titulo-do-cartao{
