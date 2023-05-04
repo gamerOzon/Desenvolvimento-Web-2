@@ -159,12 +159,132 @@ input-do-contacta-nos.textarea label{
     left: 25px;
     transform: translateY(-50%);
     font-size: 0.8rem;
-    padding: 0 04rem;
+    padding: 0 0.4rem;
     color: transparent;
     pointer-events: none;
     z-index: 500;
 }
 
+.input-do-contacta-nos span::before,
+.input-do-contacta-nos span::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    background-color: #4070F4;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .input-do-contacta-nos span::before{
-    
+    left: 50%;
+}
+
+.input-do-contacta-nos span::after{
+    right: 50%;
+}
+
+.input-do-contacta-nos.focus label{
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 0.8rem;
+}
+
+.input-do-contacta-nos.focus span::before,
+.input-do-contacta-nos.focus span::after{
+    width: 50%;
+    opacity: 1;
+}
+
+.informacoes-de-contacto{
+    padding: 2.3rem 2.2rem;
+    position: relative;
+}
+
+.informacoes-de-contacto .titulo{
+    color: #4070F4;
+}
+
+.text{
+    color: #333;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.informacoes{
+    display: flex;
+    color: #555;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.icon{
+    width: 28px;
+    margin-right: 0.7rem;
+}
+
+.rede-sociais-contactos{
+    padding: 2rem 0 0 0;
+}
+
+.rede-sociais-contactos p{
+    color: #333;
+}
+
+.icones-das-redes-sociais-dos-contactos{
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.icones-das-redes-sociais-dos-contactos a{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #4070F4, #2554d4);
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+}
+
+.icones-das-redes-sociais-dos-contactos a:hover{
+    transform:scale(1.05) ;
+}
+
+.informacoes-de-contacto::before{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 100px;
+    border: 22px solid #4070F4;
+    border-radius: 50%;
+    bottom: -77px;
+    right: 50px;
+    opacity: 0.3;
+}
+
+.circulogrande{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #4070F4, #2554d4);
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-40%, 38%);
+}
+
+.circulogrande::after{
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    background-color: #fafafa;
+    border-radius: 50%;
+    top: calc(50% - 180px);
+    left: calc(50% - 180px);
 }
