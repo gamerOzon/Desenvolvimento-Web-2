@@ -15,7 +15,31 @@
 </head>
 <body>
 
-<!-- slider Responsivo para os destaques do blog-->
+<!--Navegador-->
+<header>
+    <div class="navegador">
+        <a href="#" class="logo">
+            <img src="/imagensdahome/multimarket.png" alt="Logótipo">
+        </a>
+
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+
+
+        <div class="area-das-credenciais">
+            <a href="#" class="utilizador"><i class="fa-solid fa-user"></i>Entrar</a>
+            <a href="#">Registar</a>
+            <div class="fa-solid fa-bars" id="icon-menu"></div>
+        </div>
+    </div>
+</header>
+
+<!-- destaques do blog-->
     <div class="box-dos-contentores">
         <div class="blog-slider">
             <div class="conteudo-do-blogslider">
@@ -74,12 +98,14 @@
                         </div>
                     </div>
 
+                    
+
                 </div>
             </div> 
         </div>
     </div>
 
-
+<!--Footer com formulario-->
     <footer>
     <div class="conteudo-do-footer">
         <div class="footer-contactos">
@@ -138,7 +164,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio obcaecati soluta eaque.</p>
 
             <div class="inputnewsletter">
-                <input type="e-mail" id="email">
+                <input type="text" id="name" value="Inserir nome">
+                <button>
+                    <i class="fa-solid fa-child-reaching"></i>
+                </button>
+            </div>
+
+            <div class="inputnewsletter">
+                <input type="e-mail" id="email" value="Inserir e-mail">
                 <button>
                     <i class="fa-solid fa-envelope"></i>
                 </button>

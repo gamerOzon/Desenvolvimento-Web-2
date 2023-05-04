@@ -6,10 +6,47 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', 'sans-serif';
+    text-decoration: none;
 }
 
+/*Navegador*/
+:root{
+    --bg-color: #222327;
+    --text-color: #fff;
+    --main-color: #29fd53;
+
+}
+
+
+header{
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.navegador{
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    transition: all .50s ease;
+}
+
+.logo{
+display: flex;
+align-items: center;
+}
+
+/*Navegador*/
+
+
+/*Secção de Blog*/
+
 .box-dos-contentores{
-    box-sizing: border-box;
+
     min-height: 100vh;
     display: flex;
     align-items: center; /*centro vertical da div*/
@@ -120,6 +157,7 @@
     background: #265df2;
 }
 
+/*Secção de Blog*/
 
 /*Footer*/
 
@@ -230,6 +268,9 @@ footer{
     color: var(--color-neutral-10);
 }
 
+#name, #email{
+    color: var(--color-neutral-30);
+}
 .inputnewsletter button{
     background-color: #4070F4;
     border: none;
@@ -259,7 +300,7 @@ footer{
 @media screen and (max-width: 768px) {
     .conteudo-do-footer{
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;«
+        gap: 2rem;
     }
 }
 
