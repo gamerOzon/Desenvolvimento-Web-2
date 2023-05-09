@@ -289,7 +289,18 @@ input-do-contacta-nos.textarea label{
     left: calc(50% - 180px);
 }
 
+@media (max-width: 850px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
 
+    .informacoes-de-contacto::before{
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+}
 
 /*Footer*/
 
@@ -441,5 +452,5 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         padding: 3rem 2rem;
     }
-
+}
 /*Footer*/
