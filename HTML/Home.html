@@ -15,29 +15,49 @@
 </head>
 <body>
 
-<!--Navegador-->
-<header>
-    <div class="navegador">
-        <a href="#" class="logo">
-            <img src="/imagensdahome/multimarket.png" alt="Logótipo">
-        </a>
+<!--Slider-->
+<div class="Slideshow"> <!--slider-->
+    <div class="slides">
+        <!-- Botões Radio-->
+        <input type="radio" name="botaoRedondo" id="radio1">
+        <input type="radio" name="botaoRedondo" id="radio2">
+        <input type="radio" name="botaoRedondo" id="radio3">
+        <input type="radio" name="botaoRedondo" id="radio4">
 
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contactos</a></li>
-        </ul>
-
-
-        <div class="area-das-credenciais">
-            <a href="#" class="utilizador"><i class="fa-solid fa-user"></i>Entrar</a>
-            <a href="#">Registar</a>
-            <div class="fa-solid fa-bars" id="icon-menu"></div>
+        <!--Imagens slides-->
+        <div class="slide first">
+            <img src="/imagensdahome/banner-promocional-de-vendas-eletrônicos-com-carrinho-compras-venda-dispositivos-completo-tecnologia-e-conceito-online-168812936.jpg" alt="Esact">
         </div>
+
+        <div class="slide">
+            <img src="/imagensdahome/banner-promocional-de-venda-compras-do-grocery-shopping-carrinho-rápido-cheio-comida-fresca-colorida-168812786.jpg" alt="Esact">
+        </div>
+
+        <div class="slide">
+            <img src="/imagensdahome/banner-promocional-de-vendas-eletrônicos-com-carrinho-compras-venda-dispositivos-completo-tecnologia-e-conceito-online-168812936.jpg" alt="Esact">
+        </div>
+
+        <div class="slide">
+            <img src="/imagensdahome/banner-promocional-de-vendas-eletrônicos-com-carrinho-compras-venda-online-completo-smartphone-e-cartão-crédito-168812649.jpg" alt="Esact">
+        </div>
+        
+        <!--Navegação automática-->
+        <div class="navegacaoAutomatica">
+            <div class="botaoauto1"></div>
+            <div class="botaoauto2"></div>
+            <div class="botaoauto3"></div>
+            <div class="botaoauto4"></div>
+        </div>
+    </div>  
+    
+    <div class="navegacaomanual">
+        <label for="radio1" class="botaomanual"></label>
+        <label for="radio2" class="botaomanual"></label>
+        <label for="radio3" class="botaomanual"></label>
+        <label for="radio4" class="botaomanual"></label>
     </div>
-</header>
+    
+</div>
 
 <!-- destaques do blog-->
     <div class="box-dos-contentores">
@@ -184,5 +204,7 @@
         2023 all rights reserved.
     </div>
     </footer>
+
+    <script src="/JavaScript/Home.js"></script>
 </body>
 </html>

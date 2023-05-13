@@ -414,6 +414,7 @@ footer{
 #name, #email{
     color: var(--color-neutral-30);
 }
+
 .inputnewsletter button{
     background-color: #4070F4;
     border: none;

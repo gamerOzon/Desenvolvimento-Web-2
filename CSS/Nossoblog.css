@@ -9,121 +9,6 @@
     text-decoration: none;
 }
 
-
-/*Slidder*/
-
-/*Slideshow*/
-/*Editar o container slideshow*/
-.Slideshow{
-    width: 100%;
-    height: 400px;
-    overflow: hidden; /* cortar qualquer conteúdo que ultrapasse os limites do Slideshow*/
- }
- 
- /*Editar a posição dos botões*/
- .slides{
-     width: 400%; /*pq sao 4 imagens*/
-     height: 400px;
-     display: flex;
- }
- 
- .slides input{
-     display: none;
- }
- 
- .slide{
-     width: 25%;
-     position: relative;
-     transition: 1s;
- }
- 
- .slide img{
-     width: 100%;
-     height: 100%;
-     object-fit: cover; /* preservar os aspect ratio da imagem no contentor esticado */
-     padding-bottom: 50%; /* ppercentagem de zoom mais ou menos */
- }
- 
- .navegacaomanual{
-     position: absolute;
-     width: 800px;
-     margin-top: -40px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
- 
- .botaomanual{
-     border: 2px solid #4070F4;
-     padding: 5px;
-     border-radius: 10px;
-     cursor: pointer;
-     transition: 4s;
- }
- 
- .botaomanual:not(:last-child){
-     margin-right: 40px;
- }
- 
- .botaomanual:hover{
-     background-color:#4070F4;
- }
- 
- #radio1:checked ~ .first{
-     margin-left: 0;
- }
- 
- #radio2:checked ~ .first{
-     margin-left: -25%;
- }
- 
- #radio3:checked ~ .first{
-     margin-left: -50%;
- }
- 
- #radio4:checked ~ .first{
-     margin-left: -75%;
- }
- 
- .navegacaoAutomatica div{
-     border: 2px solid #4070F4;
-     padding: 5px;
-     border-radius: 10px;
-     cursor: pointer;
-     transition: 4s;
- }
- 
- .navegacaoAutomatica{
-     position: absolute;
-     width: 800px;
-     margin-top: 360px;
-     display: flex;
-     justify-content: center; 
- }
- 
- .navegacaoAutomatica div:not(:last-child){
-     margin-right: 40px; /*espaçamento fora de um elemento enquantoque o padding é dentro*/
- }
- 
- #radio1:checked ~ .navegacaoAutomatica .botaoauto1{
-     background-color: #4070F4;
- }
- 
- #radio2:checked ~ .navegacaoAutomatica .botaoauto2{
-     background-color: #4070F4;
- }
- 
- #radio3:checked ~ .navegacaoAutomatica .botaoauto3{
-     background-color: #4070F4;
- }
- 
- #radio4:checked ~ .navegacaoAutomatica .botaoauto4{
-     background-color: #4070F4;
- }
- 
- 
-/*Slidder*/
-
 /*Secção de Blog*/
 
 .box-dos-contentores{
@@ -240,6 +125,66 @@
 
 /*Secção de Blog*/
 
+/*seccção da mudança de página*/
+.navegador-de-pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background-color: #EFEFEF;
+}
+
+.lista-da-pagina{
+    position: relative;
+    background: #fff;
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    margin-bottom: 30px;
+}
+
+.lista-da-pagina li{
+    list-style: none;
+    line-height: 30px;
+    margin: 0 5px;
+    align-self: center;
+    justify-content: center;
+}
+
+.lista-da-pagina li.numerodapagina{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.lista-da-pagina li a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-weight: 500;
+    border-radius: 50%;
+}
+
+.lista-da-pagina li.numerodapagina:hover a,
+.lista-da-pagina li.numerodapagina.activa a{
+ background: #4070F4;
+ color: #EFEFEF;
+}
+
+.lista-da-pagina li:first-child{
+    margin-right: 30px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.lista-da-pagina li:last-child{
+    margin-left: 25px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
 /*Footer*/
 
 :root{
@@ -253,6 +198,7 @@ footer{
     width: 100%;
     letter-spacing: 1px;
     color: var(--color-neutral-40);
+    background-color: ;
 }
 
 .conteudo-do-footer{
